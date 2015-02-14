@@ -81,6 +81,7 @@ h2 small {
   width: 100%;
   font-family: sans-serif;
   overflow: hidden;
+  height: 40px;
 }
 
 .cta {
