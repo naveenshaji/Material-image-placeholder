@@ -32,16 +32,18 @@
 .card_circle {
   height: 400px;
   width: 450px;
-  background-color: #3487f7;
+  background: rgba(0,180,180,1);
   position: absolute;
   border-radius: 50%;
   margin-left: -75px;
   margin-top: -270px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
 }
 
 .card:hover .card_circle {
   border-radius: 0;
   margin-top: -130px;
+  box-shadow: 0px 0px 60px 10px rgba(0,0,0,0.2);
 }
 
 h2 {
@@ -50,7 +52,7 @@ h2 {
   position: absolute;
   z-index: 9999;
   font-size: 26px;
-  color: #3487f7;
+  color: rgba(0,180,180,1);
   width: 100%;
  font-family: sans-serif;
 }
@@ -81,16 +83,47 @@ h2 small {
 }
 
 .cta {
-  color: #3487f7;
-  border: 2px solid #3487f7;
+  color: #fff;
+  background: rgba(0,180,180,1);
   padding: 10px 25px;
-  border-radius: 50px;
   font-size: 17px;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
 }
-
+.cta:hover {
+  box-shadow: 0px 5px 15px 3px rgba(0,0,0,0.25);
+}
 .card:hover .cta-container {
   margin-top: 320px;
+}
+.wave:before{
+	content: "";
+	position:absolute;
+	top:65%;
+	left:53%;
+	display:block;
+	width:0;
+	padding-top:0;
+	border-radius:100%;
+	background-color:rgba(236, 240, 241, .3);
 
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition:all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.wave:active:before{
+	width:120%;
+	padding-top:120%;
+
+	transition: width .2s ease-out, padding-top .2s ease-out;
 }
