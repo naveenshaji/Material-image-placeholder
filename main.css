@@ -100,9 +100,16 @@ h2 small {
 }
 .wave:before{
 	content: "";
+<<<<<<< HEAD
 	position:absolute;
 	top:65%;
 	left:53%;
+=======
+  z-index: 10000;
+	position:absolute;
+	top:30%;
+	left:49%;
+>>>>>>> pr/2
 	display:block;
 	width:0;
 	padding-top:0;
